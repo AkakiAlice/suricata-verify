@@ -27,3 +27,13 @@ checks:
         ldap.responses[0].modify_response.result_code: "success"
         ldap.responses[0].modify_response.matched_dn: ""
         ldap.responses[0].modify_response.message: ""
+  - filter:
+      count: 1
+      match:
+        event_type: alert
+        alert.signature_id: 1
+  - filter:
+      count: 1
+      match:
+        event_type: alert
+        alert.signature_id: 2

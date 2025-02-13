@@ -21,3 +21,8 @@ checks:
         ldap.responses[0].compare_response.result_code: "compare_true"
         ldap.responses[0].compare_response.matched_dn: ""
         ldap.responses[0].compare_response.message: ""
+  - filter:
+      count: 1
+      match:
+        event_type: alert
+        alert.signature_id: 1

@@ -1,0 +1,2 @@
+alert ldap any any -> any any (msg:"Test attribute type"; ldap.request.attribute_type; content:"objectClass"; sid:1;)
+alert ldap any any -> any any (msg:"Test attribute type"; ldap.request.attribute_type; content:"dc"; sid:2;)
